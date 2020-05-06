@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="a rusty todo app">
+	<meta name="keywords" content="rusty, todo, es9, vanilla, clean code, javascript">
+	<title> TODO App </title>
+	<link rel="shortcut icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-light">
+	<header class="d-none">
+		<div class="text-center p-3">
+			<h2 class="p-3 my-4">
+				<span class="text-danger font-weight-bold p-2 logo">TODO</span><span
+					class="bg-danger text-light p-1 app">APP</span>
+			</h2>
+		</div>
+		<!-- goto homepage -->
+		<a href="../" class="goto-homepage"> x </a>
+	</header>
+
+	<main class="d-none">
+		<!-- TODO LIST SECTION -->
+		<section class="text-danger">
+			<ul>
+				<div class="empty-list">no TODOs available</div>
+			</ul>
+		</section>
+		<!-- ADD TODO -->
+		<form id="addTodo" class="m-5 d-flex">
+			<input type="text" name="todoContent" placeholder="enter new todo  ,  tap [-] to delete  ,  tap todo to complete"
+				class="font-weight-light form-control border-danger">
+			<input type="submit" value="+" class="btn btn-danger add-todo">
+		</form>
+	</main>
+
+	<footer class="text-center display-4 mx-auto text-danger font-weight-bold p-2 logo">
+		TODO
+	</footer>
+
+	<script src="app.js"></script>
+</body>
+
+</html>
